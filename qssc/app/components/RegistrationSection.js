@@ -159,7 +159,7 @@ const RegistrationSection = () => {
 
             {/* Next Steps */}
             <div className="bg-gradient-to-r from-[#00ff88]/10 to-[#00BBE3]/10 rounded-2xl p-6 mb-6">
-              <h3 className="text-[#00425A] text-xl font-bold mb-4 text-center">What's Next?</h3>
+              <h3 className="text-[#00425A] text-xl font-bold mb-4 text-center">Whats Next?</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center p-3 bg-white/50 rounded-xl">
                   <div className="w-8 h-8 bg-[#00ff88] rounded-full flex items-center justify-center mr-3">
@@ -323,8 +323,8 @@ const RegistrationSection = () => {
                   <option value="L1">L1 (First Year University)</option>
                   <option value="L2">L2 (Second Year University)</option>
                   <option value="L3">L3 (Third Year University)</option>
-                  <option value="M1">M1 (Master's First Year)</option>
-                  <option value="M2">M2 (Master's Second Year)</option>
+                  <option value="M1">M1 (Masters First Year)</option>
+                  <option value="M2">M2 (Masters Second Year)</option>
                   <option value="PhD">PhD (Doctoral Studies)</option>
                   <option value="High School">High School</option>
                   <option value="Professional">Professional</option>
