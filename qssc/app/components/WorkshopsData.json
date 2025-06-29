@@ -2,90 +2,247 @@
   "workshops": [
     {
       "id": 1,
-      "title": "Information Technology",
-      "date": "2025-06-29",
+      "title": "Quanta talk & Public speaking",
+      "date": "2025-06-22",
       "programmePath": [
         {
-          "time": "8:00 AM - 8:30 AM",
-          "activity": "Registration & Welcome Coffee",
-          "description": "Check-in and networking with fellow participants"
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "Quanta talk",
+          "description": "Morning session: Quanta talk"
         },
         {
-          "time": "8:30 AM - 10:00 AM",
-          "activity": "Web Development Fundamentals",
-          "description": "HTML, CSS, and JavaScript basics"
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
         },
         {
-          "time": "10:00 AM - 10:15 AM",
-          "activity": "Coffee Break",
-          "description": "Refreshments and networking"
-        },
-        {
-          "time": "10:15 AM - 12:00 PM",
-          "activity": "React.js Workshop",
-          "description": "Hands-on React development session"
-        },
-        {
-          "time": "12:00 PM - 1:00 PM",
-          "activity": "Lunch Break",
-          "description": "Catered lunch and discussions"
-        },
-        {
-          "time": "1:00 PM - 3:00 PM",
-          "activity": "Backend Development",
-          "description": "Node.js and API development"
-        },
-        {
-          "time": "3:00 PM - 3:15 PM",
-          "activity": "Afternoon Break",
-          "description": "Light refreshments"
-        },
-        {
-          "time": "3:15 PM - 5:00 PM",
-          "activity": "Project Building Session",
-          "description": "Apply what you've learned"
+          "time": "2:00 PM - 4:00 PM",
+          "activity": "Public speaking",
+          "description": "Afternoon session: Public speaking"
         }
       ]
     },
     {
       "id": 2,
-      "title": "Digital Marketing",
+      "title": "Python & Web development 2",
+      "date": "2025-06-23",
+      "programmePath": [
+        {
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "Python",
+          "description": "Morning session: Python"
+        },
+        {
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
+        },
+        {
+          "time": "2:00 PM - 4:00 PM",
+          "activity": "Web development 2",
+          "description": "Afternoon session: Web development 2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Machine Learning Applications",
+      "date": "2025-06-24",
+      "programmePath": [
+        {
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "Machine Learning Applications",
+          "description": "Morning session: Machine Learning Applications"
+        },
+        {
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "photography & Photoshop illustration",
+      "date": "2025-06-25",
+      "programmePath": [
+        {
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "photography",
+          "description": "Morning session: photography"
+        },
+        {
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
+        },
+        {
+          "time": "2:00 PM - 4:00 PM",
+          "activity": "Photoshop illustration",
+          "description": "Afternoon session: Photoshop illustration"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Motion design & Video editing",
+      "date": "2025-06-26",
+      "programmePath": [
+        {
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "Motion design",
+          "description": "Morning session: Motion design"
+        },
+        {
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
+        },
+        {
+          "time": "2:00 PM - 4:00 PM",
+          "activity": "Video editing",
+          "description": "Afternoon session: Video editing"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Plogging session",
+      "date": "2025-06-28",
+      "programmePath": [
+        {
+          "time": "9:00 AM - 5:00 PM",
+          "activity": "Plogging session",
+          "description": "Full day activity: Plogging session"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Microbiology2/histology & Dissection",
+      "date": "2025-06-29",
+      "programmePath": [
+        {
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "Microbiology2/histology",
+          "description": "Morning session: Microbiology2/histology"
+        },
+        {
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
+        },
+        {
+          "time": "2:00 PM - 4:00 PM",
+          "activity": "Dissection",
+          "description": "Afternoon session: Dissection"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Saponification/fabrication de crème hydratante & surprise",
+      "date": "2025-06-30",
+      "programmePath": [
+        {
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "Saponification/fabrication de crème hydratante",
+          "description": "Morning session: Saponification/fabrication de crème hydratante"
+        },
+        {
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
+        },
+        {
+          "time": "2:00 PM - 4:00 PM",
+          "activity": "surprise",
+          "description": "Afternoon session: surprise"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Arduino",
+      "date": "2025-07-01",
+      "programmePath": [
+        {
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "Arduino",
+          "description": "Morning session: Arduino"
+        },
+        {
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "3D printing & leadership",
+      "date": "2025-07-02",
+      "programmePath": [
+        {
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "3D printing",
+          "description": "Morning session: 3D printing"
+        },
+        {
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
+        },
+        {
+          "time": "2:00 PM - 4:00 PM",
+          "activity": "leadership",
+          "description": "Afternoon session: leadership"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Forensic police visit/CRAAG",
       "date": "2025-07-03",
       "programmePath": [
         {
-          "time": "9:00 AM - 9:30 AM",
-          "activity": "Welcome & Networking",
-          "description": "Meet your marketing mentors"
+          "time": "9:00 AM - 5:00 PM",
+          "activity": "Forensic police visit/CRAAG",
+          "description": "Full day activity: Forensic police visit/CRAAG"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Mini projects",
+      "date": "2025-07-06",
+      "programmePath": [
+        {
+          "time": "9:00 AM - 5:00 PM",
+          "activity": "Mini projects",
+          "description": "Full day activity: Mini projects"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Competition & Closing ceremony",
+      "date": "2025-07-08",
+      "programmePath": [
+        {
+          "time": "8:30 AM - 10:30 AM",
+          "activity": "Competition",
+          "description": "Morning session: Competition"
         },
         {
-          "time": "9:30 AM - 11:00 AM",
-          "activity": "Social Media Strategy",
-          "description": "Platform-specific content creation"
+          "time": "10:30 AM - 10:45 AM",
+          "activity": "Break",
+          "description": "Coffee break and networking"
         },
         {
-          "time": "11:00 AM - 11:15 AM",
-          "activity": "Coffee Break",
-          "description": "Quick networking session"
-        },
-        {
-          "time": "11:15 AM - 12:45 PM",
-          "activity": "SEO & Content Marketing",
-          "description": "Search optimization techniques"
-        },
-        {
-          "time": "12:45 PM - 1:45 PM",
-          "activity": "Lunch & Panel Discussion",
-          "description": "Industry experts Q&A"
-        },
-        {
-          "time": "1:45 PM - 3:30 PM",
-          "activity": "Google Ads Workshop",
-          "description": "Campaign creation and optimization"
-        },
-        {
-          "time": "3:30 PM - 4:00 PM",
-          "activity": "Wrap-up & Certificates",
-          "description": "Final thoughts and networking"
+          "time": "2:00 PM - 4:00 PM",
+          "activity": "Closing ceremony",
+          "description": "Afternoon session: Closing ceremony"
         }
       ]
     }
