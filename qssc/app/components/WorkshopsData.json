@@ -1,0 +1,93 @@
+{
+  "workshops": [
+    {
+      "id": 1,
+      "title": "Information Technology",
+      "date": "2025-06-29",
+      "programmePath": [
+        {
+          "time": "8:00 AM - 8:30 AM",
+          "activity": "Registration & Welcome Coffee",
+          "description": "Check-in and networking with fellow participants"
+        },
+        {
+          "time": "8:30 AM - 10:00 AM",
+          "activity": "Web Development Fundamentals",
+          "description": "HTML, CSS, and JavaScript basics"
+        },
+        {
+          "time": "10:00 AM - 10:15 AM",
+          "activity": "Coffee Break",
+          "description": "Refreshments and networking"
+        },
+        {
+          "time": "10:15 AM - 12:00 PM",
+          "activity": "React.js Workshop",
+          "description": "Hands-on React development session"
+        },
+        {
+          "time": "12:00 PM - 1:00 PM",
+          "activity": "Lunch Break",
+          "description": "Catered lunch and discussions"
+        },
+        {
+          "time": "1:00 PM - 3:00 PM",
+          "activity": "Backend Development",
+          "description": "Node.js and API development"
+        },
+        {
+          "time": "3:00 PM - 3:15 PM",
+          "activity": "Afternoon Break",
+          "description": "Light refreshments"
+        },
+        {
+          "time": "3:15 PM - 5:00 PM",
+          "activity": "Project Building Session",
+          "description": "Apply what you've learned"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Digital Marketing",
+      "date": "2025-07-03",
+      "programmePath": [
+        {
+          "time": "9:00 AM - 9:30 AM",
+          "activity": "Welcome & Networking",
+          "description": "Meet your marketing mentors"
+        },
+        {
+          "time": "9:30 AM - 11:00 AM",
+          "activity": "Social Media Strategy",
+          "description": "Platform-specific content creation"
+        },
+        {
+          "time": "11:00 AM - 11:15 AM",
+          "activity": "Coffee Break",
+          "description": "Quick networking session"
+        },
+        {
+          "time": "11:15 AM - 12:45 PM",
+          "activity": "SEO & Content Marketing",
+          "description": "Search optimization techniques"
+        },
+        {
+          "time": "12:45 PM - 1:45 PM",
+          "activity": "Lunch & Panel Discussion",
+          "description": "Industry experts Q&A"
+        },
+        {
+          "time": "1:45 PM - 3:30 PM",
+          "activity": "Google Ads Workshop",
+          "description": "Campaign creation and optimization"
+        },
+        {
+          "time": "3:30 PM - 4:00 PM",
+          "activity": "Wrap-up & Certificates",
+          "description": "Final thoughts and networking"
+        }
+      ]
+    }
+  ]
+}

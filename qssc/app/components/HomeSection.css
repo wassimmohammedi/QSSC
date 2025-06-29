@@ -1,0 +1,11 @@
+/* Mobile/Tablet background - direct background on the section */
+@media (max-width: 1023px) {
+    #home {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgb(255, 255, 255)), url('../../public/sc1.jpg') !important;
+
+
+      background-size: cover !important;
+      background-position: center !important;
+    }
+  }
+  
