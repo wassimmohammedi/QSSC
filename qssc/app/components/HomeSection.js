@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import './HomeSection.css' // Assuming you have a CSS file for additional styles
 

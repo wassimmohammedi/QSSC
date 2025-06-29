@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import DecorativeIcons from './DecorativeIcons'
 import WorkshopStepper from './WorkshopStepper'
