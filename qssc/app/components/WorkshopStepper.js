@@ -344,7 +344,7 @@ const WorkshopStepper = ({ workshops = [] }) => {
                 <div className="ml-3 mt-2">
                   <div className="bg-white rounded-md p-3 shadow-sm border-l-4 border-gray-400">
                     <p className="text-sm text-gray-600 text-center">
-                      {workshop.status === 'day_off' ? '🌴 Enjoy your day off!' : '🎉 Special ceremony day!'}
+                      {workshop.status === 'day_off' ? ' Adrbha b Tabhiraaa🌊  (📿 Matnsach slat w 🤲a9ra sourat al kahf)' : '🎉 Special ceremony day!'}
                     </p>
                   </div>
                 </div>
