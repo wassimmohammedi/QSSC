@@ -192,7 +192,7 @@ const RegistrationSection = () => {
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <button 
                 className="px-8 py-4 bg-gradient-to-r from-[#00ff88] to-[#00BBE3] text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://discord.gg/your-discord-link', '_blank')}
+                onClick={() => window.open('https://linktr.ee/quantaclubdz?fbclid=PAQ0xDSwLOsfVleHRuA2FlbQIxMQABpxBvuyCFqvURUp6jBgcUI3apX7KHoEP-yX9kb_6GCl5C1DDp52xfiPdkWDTD_aem_LC2bQHtbZAoVqiDhi5EDjQ', '_blank')}
               >
                 <div className="flex items-center justify-center">
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">

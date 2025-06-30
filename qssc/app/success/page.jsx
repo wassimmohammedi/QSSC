@@ -7,14 +7,10 @@ import './Success.css';
 const Success = () => {
   const router = useRouter();
 
-  // ⛔ location.state doesn't exist in Next.js.
-  // ✅ Use localStorage or a global store instead
   const userData =
     typeof window !== 'undefined'
       ? JSON.parse(localStorage.getItem('userData'))
       : null;
-
-  const username = userData?.username;
 
   useEffect(() => {
     if (!userData) {
@@ -26,8 +22,9 @@ const Success = () => {
     router.push('/');
   };
 
+  // This button now clearly says "Visit our Linktree"
   const handleJoinCommunity = () => {
-    window.open('https://discord.gg/your-discord-link', '_blank');
+    window.open('https://linktr.ee/quantaclubdz', '_blank');
   };
 
   if (!userData) return null;
@@ -51,7 +48,7 @@ const Success = () => {
 
           <h1 className="success-title">Welcome to QSSC!</h1>
           <p className="success-subtitle">
-            Congratulations {username}! Your registration was successful.
+            Congratulations {userData.username}! Your registration was successful.
           </p>
 
           <div className="registration-details">
@@ -86,7 +83,18 @@ const Success = () => {
             <h3>What's Next?</h3>
             <ul>
               <li>Check your email for a welcome message</li>
-              <li>Join our community channels</li>
+              <li>
+                <span>
+                  Join our community channels via our{' '}
+                  <a
+                    href="https://linktr.ee/quantaclubdz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Linktree
+                  </a>
+                </span>
+              </li>
               <li>Attend our next meeting</li>
               <li>Start your coding journey with us!</li>
             </ul>
@@ -94,7 +102,7 @@ const Success = () => {
 
           <div className="action-buttons">
             <button className="btn btn-primary" onClick={handleJoinCommunity}>
-              Join Community
+              Visit our Linktree
             </button>
             <button className="btn btn-secondary" onClick={handleGoHome}>
               Back to Home
