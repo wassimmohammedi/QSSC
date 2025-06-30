@@ -52,14 +52,51 @@ const WorkshopStepper = ({ workshops = [] }) => {
       return []
     }
 
-    return workshop.workshops.map(w => ({
-      activity: w.workshop_name,
-      time: w.time_slot === 'morning' ? '8:30 AM - 12:30 PM' : '2:00 PM - 6:00 PM',
-      description: `Instructor: ${w.instructor || 'TBA'} | Location: ${w.location || 'TBA'}`,
-      timeSlot: w.time_slot,
-      icon: getActivityIcon(w.workshop_name)
-    }))
+    const result = []
+    const morningWorkshops = workshop.workshops.filter(w => w.time_slot === 'morning')
+    const afternoonWorkshops = workshop.workshops.filter(w => w.time_slot === 'afternoon')
+
+    // Add morning workshops
+    morningWorkshops.forEach(w => {
+      result.push({
+        activity: w.workshop_name,
+        time: '8:30 AM - 12:30 PM',
+        description: `Instructor: ${w.instructor || 'TBA'} | Location: ${w.location || 'TBA'}`,
+        timeSlot: w.time_slot,
+        icon: getActivityIcon(w.workshop_name)
+      })
+    })
+
+    // Add lunch break if both morning and afternoon workshops exist
+    if (morningWorkshops.length > 0 && afternoonWorkshops.length > 0) {
+      result.push({
+        activity: 'Lunch Break',
+        time: '12:30 PM - 2:00 PM',
+        description: 'Enjoy your meal and relax',
+        timeSlot: 'break',
+        icon: getLunchIcon()
+      })
+    }
+
+    // Add afternoon workshops
+    afternoonWorkshops.forEach(w => {
+      result.push({
+        activity: w.workshop_name,
+        time: '2:00 PM - 6:00 PM',
+        description: `Instructor: ${w.instructor || 'TBA'} | Location: ${w.location || 'TBA'}`,
+        timeSlot: w.time_slot,
+        icon: getActivityIcon(w.workshop_name)
+      })
+    })
+
+    return result
   }
+
+  const getLunchIcon = () => (
+    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M8.1,13.34L3.91,9.16C2.35,7.59 2.35,5.06 3.91,3.5L10.93,10.5L8.1,13.34M14.88,11.53C16.28,12.92 16.28,15.18 14.88,16.57C13.49,17.96 11.23,17.96 9.84,16.57L7.76,14.5L10.59,11.67L14.88,11.53M21.04,2.96L19.63,1.55L18.22,2.96L16.81,1.55L15.4,2.96L16.81,4.37L15.4,5.78L16.81,7.19L18.22,5.78L19.63,7.19L21.04,5.78L19.63,4.37L21.04,2.96M15.27,9.85L6.15,18.97C5.36,19.76 4.11,19.76 3.32,18.97C2.53,18.18 2.53,16.93 3.32,16.14L12.44,7.02L15.27,9.85Z"/>
+    </svg>
+  )
 
   const getActivityIcon = (activityName) => {
     const activity = activityName.toLowerCase()
@@ -303,31 +340,42 @@ const WorkshopStepper = ({ workshops = [] }) => {
                   {programmePath.map((activity, activityIndex) => (
                     <div key={activityIndex} className="flex items-center">
                       <div className={`w-10 h-6 rounded-sm bg-white border-2 flex items-center justify-center mr-2 flex-shrink-0 ${
-                        activity.timeSlot === 'morning' ? 'border-[#00BBE3]' : 'border-[#0083B0]'
+                        activity.timeSlot === 'morning' ? 'border-[#00BBE3]' : 
+                        activity.timeSlot === 'afternoon' ? 'border-[#0083B0]' :
+                        'border-orange-400'
                       }`}>
                         <span className={`text-[9px] font-bold ${
-                          activity.timeSlot === 'morning' ? 'text-[#00BBE3]' : 'text-[#0083B0]'
+                          activity.timeSlot === 'morning' ? 'text-[#00BBE3]' : 
+                          activity.timeSlot === 'afternoon' ? 'text-[#0083B0]' :
+                          'text-orange-500'
                         }`}>
                           {getTimeOnly(activity.time)}
                         </span>
                       </div>
                       
                       <div className={`bg-white rounded-md p-2 flex-1 shadow-sm border-l-2 max-w-xs ${
-                        activity.timeSlot === 'morning' ? 'border-[#00BBE3]' : 'border-[#0083B0]'
+                        activity.timeSlot === 'morning' ? 'border-[#00BBE3]' : 
+                        activity.timeSlot === 'afternoon' ? 'border-[#0083B0]' :
+                        'border-orange-400'
                       }`}>
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
                             <span className={`mr-2 ${
-                              activity.timeSlot === 'morning' ? 'text-[#00BBE3]' : 'text-[#0083B0]'
+                              activity.timeSlot === 'morning' ? 'text-[#00BBE3]' : 
+                              activity.timeSlot === 'afternoon' ? 'text-[#0083B0]' :
+                              'text-orange-500'
                             }`}>
                               {activity.icon}
                             </span>
                             <span className="font-medium text-[#00425A] text-xs">{activity.activity}</span>
                           </div>
                           <span className={`text-[10px] font-medium ${
-                            activity.timeSlot === 'morning' ? 'text-[#00BBE3]' : 'text-[#0083B0]'
+                            activity.timeSlot === 'morning' ? 'text-[#00BBE3]' : 
+                            activity.timeSlot === 'afternoon' ? 'text-[#0083B0]' :
+                            'text-orange-500'
                           }`}>
-                            {activity.timeSlot === 'morning' ? 'AM' : 'PM'}
+                            {activity.timeSlot === 'morning' ? 'AM' : 
+                             activity.timeSlot === 'afternoon' ? 'PM' : 'BREAK'}
                           </span>
                         </div>
                         {activity.description && (
